@@ -1,4 +1,5 @@
-class Solution {
+
+        class Solution {
     public int minSubArrayLen(int target, int arr[]) {
         int n =arr.length;
         int left=0;
@@ -24,3 +25,9 @@ class Solution {
         return minLength == Integer.MAX_VALUE ? 0 : minLength ;
     }
 }
+
+
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
