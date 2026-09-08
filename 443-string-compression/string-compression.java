@@ -1,7 +1,6 @@
 class Solution {
-    public int compress(char chars[]) {
-       
-        int write=0; //write will count the length of each character group and in final tells the actual length pof compressed array
+    public int compress(char[] chars) {
+             int write=0; //write will count the length of each character group and in final tells the actual length pof compressed array
         int read=0;
 
       while(read<chars.length){
@@ -25,11 +24,12 @@ if(count>1){
       chars[write++]=c;
 }
 
-
-
-
       }
       return write;
 
     }
 }
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
