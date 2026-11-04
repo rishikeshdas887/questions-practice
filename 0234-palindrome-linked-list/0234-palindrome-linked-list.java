@@ -34,7 +34,7 @@ while(curr!=null){
 
 }
 
-//cheking palindrome or not
+
 ListNode right=prev;
 ListNode left=head;
 
