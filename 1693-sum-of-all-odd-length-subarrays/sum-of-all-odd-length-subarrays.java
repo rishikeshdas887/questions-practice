@@ -2,23 +2,25 @@ class Solution {
     public int sumOddLengthSubarrays(int arr[]) {
         
     int n =arr.length;
-    int total=0;  //sum of all odd length sub arrays is counted 
+  int total=0;  //sum of all odd length sub arrays is counted 
   for(int i = 0 ; i < n ; i++){
-    int sum=0;
+ 
+ //calculate L
+int  L=i+1; //calculating the choices for starting position
 
-for(int j =i ; j <n ; j++){
-     sum=sum+ arr[j];
+//calculate R ,i.e the choices for the ending position
+int R=n-i;
 
-     int length=j-i+1;
-     
-     if(length % 2 !=0){
-        total+=sum;
-     }
+//calculate the count 
+
+int count =(L*R+1)/2;  //in how many odd length sub arrays , a element occurs
+
+total+=arr[i]*count;
 
 }
 
 
-  }
+  
 
 return total;
 
